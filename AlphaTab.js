@@ -614,7 +614,7 @@ alphaTab.AlphaTabApi.prototype = {
 		this._tickCache = generator.tickLookup;
 		this.player.loadMidiFile(midiFile);
 	}
-	,changeTrackVolume: function(tracks,volume) {
+	,a: function(tracks,volume) {
 		if(this.player == null) {
 			return;
 		}
@@ -5001,7 +5001,7 @@ alphaTab.rendering.layout.ScoreLayout.prototype = {
 	}
 	,renderAnnotation: function() {
 		var _gthis = this;
-		var msg = "rendered by alphaTab (https://alphaTab.net)";
+		var msg = "";
 		var canvas = this.renderer.canvas;
 		var resources = this.renderer.settings.renderingResources;
 		var size = 12 * this.renderer.settings.scale;
@@ -34973,7 +34973,7 @@ alphaTab.ui.BrowserUiFacade.prototype = {
 			var this1 = "";
 			var css = this1;
 			css = css + ("@font-face {" + "\r\n");
-			css = css + ("    font-family: 'alphaTab';" + "\r\n");
+			css = css + ("    font-family: 'alphaTab';"v + "\r\n");
 			css = css + ("     src: url('" + fontDirectory + "Bravura.eot');" + "\r\n");
 			css = css + ("     src: url('" + fontDirectory + "Bravura.eot?#iefix') format('embedded-opentype')" + "\r\n");
 			css = css + ("          , url('" + fontDirectory + "Bravura.woff') format('woff')" + "\r\n");
